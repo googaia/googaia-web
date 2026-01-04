@@ -13,7 +13,7 @@ export function MarkdownViewer({ content, className }: MarkdownViewerProps) {
     let paragraphCount = 0;
 
     return (
-        <div className={cn("prose prose-lg prose-amber max-w-none dark:prose-invert prose-headings:font-bold prose-headings:text-primary prose-a:text-primary prose-strong:text-foreground/90", className)}>
+        <div className={cn("prose prose-lg prose-amber max-w-none dark:prose-invert prose-headings:font-bold prose-headings:text-primary prose-a:text-primary prose-strong:text-foreground/90 prose-p:text-foreground prose-li:text-foreground text-foreground", className)}>
             <ReactMarkdown
                 components={{
                     p: ({ node, ...props }) => {
