@@ -45,7 +45,9 @@ export function getAllPosts(): Post[] {
 
 export function getPostsByCategory(category: string): Post[] {
     const allPosts = getAllPosts();
-    return allPosts.filter((post) => post.category === category);
+    return allPosts
+        .filter((post) => post.category === category)
+        .sort((a, b) => (new Date(a.date) > new Date(b.date) ? -1 : 1));
 }
 
 export function getPostBySlug(category: string, slug: string): Post | null {

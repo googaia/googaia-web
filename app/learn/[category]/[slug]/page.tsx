@@ -32,9 +32,9 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
     return (
         <div className="py-20">
             <Container>
-                <Link href={`/learn/${category}`} className="inline-flex items-center text-sm font-medium text-foreground/60 hover:text-primary mb-8 transition-colors">
+                <Link href="/learn" className="inline-flex items-center text-sm font-medium text-foreground/60 hover:text-primary mb-8 transition-colors">
                     <ArrowLeft className="mr-2 h-4 w-4" />
-                    Back to {category}
+                    Back to All Articles
                 </Link>
 
                 <article className="mx-auto max-w-3xl">
