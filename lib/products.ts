@@ -21,12 +21,27 @@ const zodiacSigns = [
     "Sagittarius", "Capricorn", "Aquarius", "Pisces"
 ];
 
+const zodiacImages: Record<string, string> = {
+    "Aries": "/images/products/starborn-aries-v2.png",
+    "Taurus": "/images/products/starborn-taurus-v2.png",
+    "Gemini": "/images/products/starborn-gemini-v2.png",
+    "Cancer": "/images/products/starborn-cancer-v2.png",
+    "Leo": "/images/products/starborn-leo-v2.png",
+    "Virgo": "/images/products/starborn-virgo-v2.png",
+    "Libra": "/images/products/starborn-libra-v2.png",
+    "Scorpio": "/images/products/starborn-scorpio-v2.png",
+    "Sagittarius": "/images/products/starborn-sagittarius-v2.png",
+    "Capricorn": "/images/products/starborn-capricorn-v2.png",
+    "Aquarius": "/images/products/starborn-aquarius-v2.png",
+    "Pisces": "/images/products/starborn-pisces-v2.png",
+};
+
 const zodiacProducts: Product[] = zodiacSigns.map(sign => ({
     id: `starborn-${sign.toLowerCase()}`,
     title: `StarBorn: ${sign} Edition`,
     description: `Celebrate your little ${sign} with our signature StarBorn tee. Made from 100% organic cotton, featuring the minimalist ${sign} constellation. Perfect for the customized wardrobe.`,
     price: 28.00,
-    image: "/images/products/starborn-tee.png", // Reuse existing image for now
+    image: zodiacImages[sign] || "/images/products/starborn-tee.png",
     category: "StarBorn",
     zodiacSign: sign,
     variants: [
