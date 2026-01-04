@@ -4,10 +4,15 @@ import { Container } from "@/components/ui/Container";
 import { ArticleCard } from "@/components/content/ArticleCard";
 import { Button } from "@/components/ui/Button";
 import { ArrowRight, Sparkles, Baby, Moon, Utensils, Brain, Heart, ChevronRight } from "lucide-react";
+import { AdUnit } from "@/components/ads/AdUnit";
 
 export default function LearnPage() {
     const allPosts = getAllPosts();
     const latestPosts = allPosts.slice(0, 3);
+
+    // Ad Configuration
+    const adSlot = "2417272515";
+    const adLayoutKey = "-gw-3+1f-3d+2z";
 
     // Get latest 3 for each category
     const newbornPosts = getPostsByCategory("newborn").slice(0, 3);
@@ -58,6 +63,20 @@ export default function LearnPage() {
                         {newbornPosts.map((post) => (
                             <ArticleCard key={post.slug} post={post} />
                         ))}
+                    </div>
+                </Container>
+            </section>
+
+            {/* In-Feed Ad Unit */}
+            <section className="bg-white pb-8">
+                <Container>
+                    <div className="mx-auto max-w-4xl">
+                        <AdUnit
+                            slot={adSlot}
+                            layoutKey={adLayoutKey}
+                            format="fluid"
+                            className="bg-[#FFF8F0] rounded-xl"
+                        />
                     </div>
                 </Container>
             </section>
