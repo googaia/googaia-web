@@ -22,18 +22,18 @@ const zodiacSigns = [
 ];
 
 const zodiacImages: Record<string, string> = {
-    "Aries": "/images/products/starborn-aries-v2.png",
-    "Taurus": "/images/products/starborn-taurus-v2.png",
-    "Gemini": "/images/products/starborn-gemini-v2.png",
-    "Cancer": "/images/products/starborn-cancer-v2.png",
-    "Leo": "/images/products/starborn-leo-v2.png",
-    "Virgo": "/images/products/starborn-virgo-v2.png",
-    "Libra": "/images/products/starborn-libra-v2.png",
-    "Scorpio": "/images/products/starborn-scorpio-v2.png",
-    "Sagittarius": "/images/products/starborn-sagittarius-v2.png",
-    "Capricorn": "/images/products/starborn-capricorn-v2.png",
-    "Aquarius": "/images/products/starborn-aquarius-v2.png",
-    "Pisces": "/images/products/starborn-pisces-v2.png",
+    "Aries": "/images/products/starborn-aries-v3.png",
+    "Taurus": "/images/products/starborn-taurus-v3.png",
+    "Gemini": "/images/products/starborn-gemini-v3.png",
+    "Cancer": "/images/products/starborn-cancer-v3.png",
+    "Leo": "/images/products/starborn-leo-v3.png",
+    "Virgo": "/images/products/starborn-virgo-v3.png",
+    "Libra": "/images/products/starborn-libra-v3.png",
+    "Scorpio": "/images/products/starborn-scorpio-v3.png",
+    "Sagittarius": "/images/products/starborn-sagittarius-v3.png",
+    "Capricorn": "/images/products/starborn-capricorn-v3.png",
+    "Aquarius": "/images/products/starborn-aquarius-v3.png",
+    "Pisces": "/images/products/starborn-pisces-v3.png",
 };
 
 const zodiacProducts: Product[] = zodiacSigns.map(sign => ({
@@ -57,7 +57,7 @@ export const products: Product[] = [
         title: "Dreamy Cloud Onesie",
         description: "Wrap your newborn in pure comfort with our Dreamy Cloud Onesie. Snap closures for easy changing and ultra-soft fabric for sensitive skin.",
         price: 18.00,
-        image: "/images/products/cloud-onesie.png",
+        image: "/images/products/cloud-onesie-v2.png",
         category: "Baby",
         variants: [
             { id: "size", name: "Size", options: ["0-3M", "3-6M", "6-12M"] },
@@ -68,7 +68,7 @@ export const products: Product[] = [
         title: "Hello Sunshine Tee",
         description: "Bring a little brightness to every day. This cheerful yellow tee features a retro-inspired typographic design. Durable enough for play, cute enough for photos.",
         price: 22.00,
-        image: "/images/products/sunshine-tee.png",
+        image: "/images/products/sunshine-tee-v2.png",
         category: "Toddler",
         variants: [
             { id: "size", name: "Size", options: ["2T", "3T", "4T"] },
