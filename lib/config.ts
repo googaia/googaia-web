@@ -1,0 +1,1 @@
+export const GOOGLE_ADSENSE_ID = 'pub-7943798921702739';

@@ -32,9 +32,7 @@ export default function RootLayout({
         {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID && (
           <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID} />
         )}
-        {process.env.NEXT_PUBLIC_GOOGLE_ADSENSE_ID && (
-          <GoogleAdSense pId={process.env.NEXT_PUBLIC_GOOGLE_ADSENSE_ID.replace("ca-pub-", "")} />
-        )}
+        <GoogleAdSense />
 
         <ShopProvider>
           <Header />
